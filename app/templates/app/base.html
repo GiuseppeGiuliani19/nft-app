@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Piattaforma utente</title>
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'css/app.css' %}">
+    </head>
+<body>
+    <header class="page-header">
+      <div class="container">
+          <h1><a href="/">Piattaforma nft</a></h1>
+          <h1><a href="/">puntata</a></h1>
+          <h1><a href="/">riscatta</a></h1>
+          <h1><a href="/">riscatta ricompense</a></h1>
+      </div>
+    </header>
+    <main class="container">
+        <div class="row">
+            <div class="col">
+            {% block content %}
+            {% endblock %}
+            </div>
+        </div>
+    </main>
+</body>
+</html>

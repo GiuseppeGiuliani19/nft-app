@@ -1,0 +1,13 @@
+{% extends 'app/base.html' %}
+{% block content %}
+<body>
+<h1>Nft dell'utente</h1>
+{% for nft in nfts %}
+<div class="order">
+<h5>id: {{ nft }}</h5>
+<h5>user: {{ nft.profile }}</h5>
+<h5>data: {{ nft.datetime }}</h5>
+</div>
+{% endfor %}
+</body>
+{% endblock %}
